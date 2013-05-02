@@ -9,6 +9,8 @@ import math
 import sys
 import pickle
 from nltk.stem.wordnet import WordNetLemmatizer
+import os.path,subprocess
+
 lmtzr = WordNetLemmatizer()
 this_dir,this_filename = os.path.split(os.path.abspath(__file__))
 
@@ -98,3 +100,23 @@ def extractWordList(filename):
     a2=len(lst)
     #print(a1,a2)
     return lst
+
+def getMainContent(url):
+    tmpfile = "./.cache/tmp.txt"
+    otestfile = open(tmpfile, 'w')
+    otestfile.write("")
+    rslt = "ERROR"
+    try:
+        p1 = subprocess.Popen(["/usr/bin/java","-cp","./gettestset/boilerpipe/create_jar/:./gettestset/boilerpipe/boilerpipe-1.2.0.jar:./gettestset/boilerpipe/lib/*", "Getwebcontent",url], stdout=subprocess.PIPE)
+        print "getting ",url[0:50]
+        rslt = p1.stdout.read()
+        rsltList = rslt.split("\n")
+        rslt = "\n".join([i for i in rsltList if i!=""][1:])
+        rslt = "ERROR" if ""==rslt else rslt
+    except urllib2.HTTPError:
+        print "ERROR",url
+    except urllib2.URLError, e:
+        print "There was an error: %r" % e
+    otestfile.write(rslt)
+    return tmpfile
+

@@ -49,11 +49,13 @@ def getPcj(category): #category category probility
     return categorycnt/totalcnt
 
 
-def evaluate(filename):
+def evaluate(tobeEvaFile):
+    if tobeEvaFile[0:4].upper()=="HTTP" or tobeEvaFile[0:4].upper()=="WWW.":
+        tobeEvaFile = UT.getMainContent(tobeEvaFile)
     st = time.time()
     result={}
     result_log={}
-    testsetlst = UT.extractWordList(filename)
+    testsetlst = UT.extractWordList(tobeEvaFile)
     for category in UT.getFileInsideDir(TRAININGSET_DIR):
         p=getPcj(category) #non-log
         p_log=math.log(getPcj(category),10) #log

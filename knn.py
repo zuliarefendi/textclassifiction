@@ -29,6 +29,9 @@ def calWeightVector(filename,wordlstOfFile,termselection):
 #compute the corresponding TF-IDF(weight) vector for each file in training set
 # set termselection to None means turn off termselection
 def evaluate(tobeEvaFile,termselection):
+    if tobeEvaFile[0:4].upper()=="HTTP" or tobeEvaFile[0:4].upper()=="WWW.":
+        tobeEvaFile = UT.getMainContent(tobeEvaFile)
+
     st = time.time();
     #training
  

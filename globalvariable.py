@@ -14,7 +14,7 @@ TRAININGSET_DIR = os.path.join(this_dir,"./trainset/")         #business  entert
 #TRAININGSET_DIR = os.path.join(this_dir,"./trainset_2/")      #sports,nonsports
 #TRAININGSET_DIR = os.path.join(this_dir,"./simpletrainset/")   #chinese,tokyo ,in order to verify bayesian
 #TRAININGSET_DIR = os.path.join(this_dir,"./simpletrainset2/")  #c,not_c, cat,dog,mouse in order to verify infomation gain
-DEBUG_ON =  True;
+DEBUG_ON =  False;
 
 class GlobalCanModify(object):
     TERM_SELECTION_RATE  = 0.1 #infomation gain ratio

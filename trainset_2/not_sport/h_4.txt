@@ -1,0 +1,51 @@
+Lymphoseek Approved in US for Breast Cancer, Melanoma
+
+A novel receptor-targeted radioactive tracer for intraoperative lymphatic mapping (ILM) — technetium Tc 99m tilmanocept (Lymphoseek, Navidea Biopharmaceuticals) — has been approved by the US Food and Drug Administration (FDA). It is indicated for use in patients with breast cancer or melanoma who are undergoing surgery to remove tumor-draining lymph nodes.
+
+ILM is widely used for staging in patients with breast cancer and melanoma who are clinically node-negative; the mapping can detect whether any nodes contain cancer cells.
+
+Lymphoseek is the first new drug for lymph node mapping to be approved in more than 30 years, the FDA noted in its announcement. Other products used for lymph node mapping include sulfur colloid (approved by the FDA in 1974) and isosulfan blue (approved in 1981).
+
+"Removal and pathologic examination of lymph nodes draining a primary tumor is an important diagnostic evaluation for some patients with breast cancer or melanoma," said Shaw Chen, MD, deputy director of the Office of Drug Evaluation IV in the FDA Center for Drug Evaluation and Research. "To use 
+
+Lymphoseek, doctors inject the drug into the tumor area and then, using a handheld radiation detector, find lymph nodes that have taken up Lymphoseek's radioactivity."
+
+The approval is supported by data from clinical trials of 332 patients with melanoma or breast cancer. All patients were injected with Lymphoseek and blue dye, and surgeons subsequently removed suspected lymph nodes for pathologic examination. Confirmed lymph nodes were then examined, and the results showed that both Lymphoseek and blue dye had localized most lymph nodes, although a notable number of nodes were localized only by Lymphoseek.
+
+The most common adverse effect identified in clinical trials was pain or irritation at the injection site, the FDA noted.
+
+Finding Tumor in Lymph Nodes That Were Missed
+
+Results from the clinical trial supporting the approval were presented at the annual meeting of the American Society of Clinical Oncology in 2011, and reported at the time by Medscape Medical News.
+
+At a press briefing during that meeting, the 2 lead investigators involved in the clinical trials spoke enthusiastically about their experience with the product. However, after the results were presented, the discussant for the study questioned the choice of the control used.
+
+Vital blue dye (VBD) alone was used as a control, but in clinical practice, VBD is often used in combination with a radioactive tracer, technetium 99m–labeled sulfur colloid. However, this combination is not approved for use in ILM, so its use is considered to be off-label. Because of this, it is not standardized and there is wide variation in its use at different centers.
+
+Lymphoseek was designed specifically for use in ILM because "we wanted to overcome the drawbacks of using VBD in combination with colloidal sulfur," explained Anne Wallace, MD, professor of surgery and director of the breast care unit at the Moores Cancer Center at the University of California, San Diego. She was involved in the early development of the product, about 12 years ago, and was the lead investigator for the breast cancer portion of the trial.
+
+Lymphoseek is made up of a radiopharmaceutical attached to a dextra core, which targets dextra-mannose receptors on the surface of lymphatic cells; this means that the tracer binds to and stays in the lymph nodes, she explained.
+
+It is easier to use than the combination of VBD plus colloidal sulfur, Dr. Wallace said. VBD can cause blue staining or tattooing of the breast, and colloidal sulfur can cause a burning sensation and pain when it is injected. The new product has neither of these adverse effects. It is also more accurate, she said — it identified a significant number of tumor-containing nodes that were not stained blue.
+
+In the trial, VBD and Lymphoseek were used in each patient, and the nodes that were stained blue were compared with those identified as "hot" by the radiotracer.
+
+In her cohort of breast cancer patients, Lymphoseek independently upstaged 2 patients, Dr. Wallace reported.
+
+In those 2 patients, there was no blue signal, but there was a "subtle hot signal," she noted. The finding of cancer cells in the nodes makes a difference in the treatment recommendation.
+
+"This is huge in early breast cancer," Dr. Wallace explained. "The product made a difference. Both of these women will go on to adjuvant therapy that they may not have otherwise received."
+
+A similar experience was reported by Vernon Sondak, MD, chair of cutaneous surgery at the H. Lee Moffitt Cancer Center in Tampa, Florida, and another principal investigator on the trial. He was treating melanoma patients, and also had 2 who were upstaged; Lymphoseek found tumor in lymph nodes that were not identified by the blue dye.
+
+The "Elephant in the Room"
+
+After the data were presented in 2011, Michael Sabel, MD, FACS, assistant professor of surgery at the University of Michigan in Ann Arbor, who acted as a discussant, described this trial as a "good first step." The product's unique point is that it binds to receptors on the surface of lymph node cells, which might give it an advantage, he said. The trial shows that it is equally effective when administered the day before surgery or on the day of surgery. This could be useful because "it is easier for both our patients and us if it can be given the day before," Dr. Sabel explained.
+
+The trial also showed that Lymphoseek is better than VBD, he said.
+
+However, there is an "elephant in the room" here, Dr. Sabel pointed out. Lymphoseek was compared with VBD alone, but it is never used alone in clinical practice; it is always used in combination with colloidal sulfur, he explained.
+
+He noted that the real question is: How do Lymphoseek plus VBD compare with colloidal sulfur plus VBD?
+
+At the press briefing, the manufacturer said it designed and conducted the trials after consultation with the FDA. The comparator for the trial was chosen after long discussions with the agency, and VBD was used alone because it is the only FDA-approved agent.

@@ -1,0 +1,14 @@
+#generate evaluate document list to ../tobeevaluate.txt
+usage:
+mywget.sh
+
+url.txt has 4 tags
+#business
+#sport
+#health
+#entertainment
+
+
+boilerpipe:
+http://code.google.com/p/boilerpipe/
+

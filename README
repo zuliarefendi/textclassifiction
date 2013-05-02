@@ -1,0 +1,32 @@
+please get nodebox code from http://nodebox.net/code/data/media/linguistics.zip,then unzip to en
+
+Directories
+-----------------------------
+testset
+tmp
+trainset
+trainset_2
+simpletrainset
+simpletrainset2
+classic_testset  # is the testset for simpletrainset
+
+Turn ON/Off detail log:
+edit globalvariable.py and change DEBUG_ON to True/False
+
+Test steps:
+
+
+Evaluation steps:
+1. retrieve test documents
+   cd gettestset
+   edit urls.txt
+   mywget.sh #will generate tobeevaluated.txt
+2. evaluation
+   python
+   import myevaluate
+   a = myevaluate.start("B") #baysian
+   b = myevaluate.start("K",0.01) #KNN
+   merged = list(set(a+b))
+
+   or 
+   run myevaluate.sh

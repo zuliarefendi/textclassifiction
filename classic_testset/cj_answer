@@ -1,0 +1,27 @@
+    trainingfiles of  c  :  3 ,words: 8
+    trainingfiles of  j  :  1 ,words: 3
+    vocabulary of training set number: 6
+    words in test set: 5
+-------------------------------------------------------------------------non-log
+    ('c', 0.00030121377997263036)
+    ('j', 0.00013548070246744226)
+-------------------------------------------------------------------------after log
+    ('c', -3.5211251638485592) <----- SELECTED
+    ('j', -3.86812256020468) 
+-------------------------------------------------------------------------running time
+    1.01188111305 seconds
+
+
+-----------------------------------------------------------statistics infomation
+    trainingfiles of  c  :  3 ,words: 8
+    trainingfiles of  j  :  1 ,words: 3
+    vocabulary of training set number: 6
+    words in test set: 5
+----------------------------------------------------------------------
+    ./simpletrainset/j/1.txt    distance: 1.0   TOP 1
+    ./simpletrainset/c/2.txt    distance: 0.577350652773    TOP 2
+    ./simpletrainset/c/1.txt    distance: 0.577350652773    TOP 3
+    ./simpletrainset/c/3.txt    distance: 4.69791576502e-07     TOP 4
+-------------------------------------------------------------------------running time
+    0.00375318527222 seconds
+

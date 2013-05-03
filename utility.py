@@ -102,13 +102,15 @@ def extractWordList(filename):
     return lst
 
 def getMainContent(url):
+    if not os.path.exists(CACHE_DIR):
+        os.makedirs(CACHE_DIR)
     tmpfile = "./.cache/tmp.txt"
     otestfile = open(tmpfile, 'w')
     otestfile.write("")
     rslt = "ERROR"
     try:
         p1 = subprocess.Popen(["/usr/bin/java","-cp","./gettestset/boilerpipe/create_jar/:./gettestset/boilerpipe/boilerpipe-1.2.0.jar:./gettestset/boilerpipe/lib/*", "Getwebcontent",url], stdout=subprocess.PIPE)
-        print "getting ",url[0:50]
+        print "extract main content of ",url[0:50]+"..."
         rslt = p1.stdout.read()
         rsltList = rslt.split("\n")
         rslt = "\n".join([i for i in rsltList if i!=""][1:])

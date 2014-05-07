@@ -1,5 +1,50 @@
 please get nodebox code from http://nodebox.net/code/data/media/linguistics.zip,then unzip to en
 
+http://www.velvetcache.org/2010/03/01/looking-up-words-in-a-dictionary-using-python
+NLTK issue
+So what we need to do is run the NLTK installer, as shown here:
+
+>>> import nltk
+>>> nltk.download()
+NLTK Downloader
+---------------------------------------------------------------------------
+    d) Download      l) List      c) Config      h) Help      q) Quit
+---------------------------------------------------------------------------
+Downloader> d
+ 
+Download which package (l=list; x=cancel)?
+  Identifier> wordnet
+    Downloading package 'wordnet' to /home/jmhobbs/nltk_data...
+      Unzipping corpora/wordnet.zip.
+ 
+---------------------------------------------------------------------------
+    d) Download      l) List      c) Config      h) Help      q) Quit
+---------------------------------------------------------------------------
+Downloader> q
+True
+>>>
+
+Using NLTK + Wordnet
+
+Now that we have everything installed, using wordnet from Python is straight forward.
+    
+
+# Load the wordnet corpus
+from nltk.corpus import wordnet
+ 
+# Get a collection of synsets (synonym sets) for a word
+synsets = wordnet.synsets( 'cake' )
+ 
+# Print the information
+for synset in synsets:
+  print "-" * 10
+  print "Name:", synset.name
+  print "Lexical Type:", synset.lexname
+  print "Lemmas:", synset.lemma_names
+  print "Definition:", synset.definition
+  for example in synset.examples:
+    print "Example:", example
+
 Directories
 -----------------------------
 testset

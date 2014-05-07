@@ -17,5 +17,5 @@ TRAININGSET_DIR = os.path.join(this_dir,"./trainset/")         #business  entert
 DEBUG_ON = True
 
 class GlobalCanModify(object):
-    TERM_SELECTION_RATE  = 0.1 #infomation gain ratio
+    TERM_SELECTION_RATE  = 0.005 #infomation gain ratio
 

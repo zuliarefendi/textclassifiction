@@ -41,9 +41,9 @@ def genFullPath(category,filename):
     return TRAININGSET_DIR+category+"/"+filename
 
 def contents(filename):
-    with file(filename) as f: return f.read()
+    with file(filename) as f: return f.read().decode('utf-8')
 
-def convertNoun(srclst): 
+def convertNoun(srclst):
     return [lmtzr.lemmatize(item) for item in srclst]
 
 def convertVerb(srclst):
@@ -58,7 +58,7 @@ def convertVerb(srclst):
             and (not en.is_adverb(item)) \
             and (item not in WIERDWORDS):
             try:
-                itemnew = en.verb.present(item) 
+                itemnew = en.verb.present(item)
             except:
                 print "unrecognized word:",item
                 itemnew = item
@@ -66,7 +66,7 @@ def convertVerb(srclst):
             itemnew = item;
         dstlst.append(itemnew)
     return dstlst
- 
+
 def removeWithStoplist(srclst,stopfile):
     contt = contents(stopfile)
     stoplist = contt.split("\n")
@@ -77,18 +77,21 @@ def getFileInsideDir(dirname):
 
 def extractWordList(filename):
     contt = contents(filename)
-    contt=contt.replace("’", "'");
-    contt=contt.replace("“", "'");
-    contt=contt.replace("”", "'");
-    contt=contt.replace("—", "-");
-    contt=contt.replace("-", " ");
-    contt=contt.replace("_", " ");
-    contt=contt.replace("'s", "");
-    contt=contt.replace("/", " ");
-    contt=contt.replace("\\", " ");
-    contt=re.sub(r'\b[^a-zA-Z]{2,}\b',r' ',contt);
-    contt=re.sub(r'\b[^a-zA-Z]{2,}',r' ',contt);
-    contt=re.sub(r'[\n\r\t\(\)\.",\?:;!+]+',r' ',contt);
+    try:
+        contt=contt.replace("’", "'");
+        contt=contt.replace("“", "'");
+        contt=contt.replace("”", "'");
+        contt=contt.replace("—", "-");
+        contt=contt.replace("-", " ");
+        contt=contt.replace("_", " ");
+        contt=contt.replace("'s", "");
+        contt=contt.replace("/", " ");
+        contt=contt.replace("\\", " ");
+        contt=re.sub(r'\b[^a-zA-Z]{2,}\b',r' ',contt);
+        contt=re.sub(r'\b[^a-zA-Z]{2,}',r' ',contt);
+        contt=re.sub(r'[\n\r\t\(\)\.",\?:;!+]+',r' ',contt);
+    except UnicodeError:
+        pass
     lst = contt.split(" ")
 
     a1=len(lst)
